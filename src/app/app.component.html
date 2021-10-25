@@ -1,1 +1,10 @@
-<h1>hello world</h1>
+<h1 *ngIf="title">hello world</h1>
+<ng-container *ngIf="appVersion">
+  <p>Version: {{appVersion}}</p>
+</ng-container>
+<ng-container *ngIf="environment">
+  <p>Environment: {{environment}}</p>
+</ng-container>
+<ng-container *ngIf="firebaseMessagingToken">
+  <p>Token: {{firebaseMessagingToken}}</p>
+</ng-container>
